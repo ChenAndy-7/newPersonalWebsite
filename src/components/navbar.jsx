@@ -8,9 +8,7 @@ function Navbar({ isDark, toggleTheme }) {
         
         <div className="flex items-center space-x-4">
           <div className="hidden md:flex space-x-6">
-            <a href="#about" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100">
-              About
-            </a>
+            
             <a href="#experience" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100">
               Experience
             </a>
@@ -36,17 +34,12 @@ function Navbar({ isDark, toggleTheme }) {
     
     className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100"
   >
-    LinkedIn
+    <img src = "../src/linkedIn.png" className="h-10 w-10 p-2 rounded-lg bg-transparent dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors">
+    </img>
   </a>
 </div>
           
-          <button 
-            onClick={toggleTheme}
-            className="p-2 rounded-lg bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-900 dark:text-slate-100 transition-colors"
-            
-          >
-            {isDark ? '☀️' : '🌙'}
-          </button>
+          
         </div>
       </div>
     </nav>

@@ -1,27 +1,18 @@
 @import "tailwindcss";
 
+/* Enable class-based dark mode for Tailwind v4 */
+@theme {
+  --default-transition-duration: 300ms;
+}
+
+@variant dark (.dark &);
+
 .subheading {
   margin: 2.5rem;
   font-size: 24px;
+  color: rgb(17 24 39); /* gray-900 */
 }
 
-/* ADD THESE MISSING CLASSES: */
-.main-content {
-  @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300;
-}
-
-.text-secondary {
-  @apply text-gray-700 dark:text-gray-300;
-}
-
-.text-muted {
-  @apply text-gray-500 dark:text-gray-400;
-}
-
-.skill-card {
-  @apply bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-gray-200 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200;
-}
-
-.shadow-theme-lg {
-  @apply shadow-lg dark:shadow-gray-800/25;
+.dark .subheading {
+  color: rgb(243 244 246); /* gray-100 */
 }
