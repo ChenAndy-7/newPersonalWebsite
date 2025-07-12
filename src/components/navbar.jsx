@@ -21,14 +21,24 @@ function Navbar({ isDark, toggleTheme }) {
               Projects
             </a>
           </div>
-          
-          
-          <div className="flex items-center space-x-3">
-            <p src ="githublogo.png">
-            <a href="https://github.com/ChenAndy-7"></a></p>
-            <a href="https://www.linkedin.com/in/andy-chen05/"></a>
-          </div>
-          
+         <div className="flex items-center space-x-3">
+<a 
+  href="https://github.com/ChenAndy-7" 
+  className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100"
+>
+  <img 
+    src="../src/githubLogo.png" 
+    className="h-10 w-10 p-2 rounded-lg bg-transparent dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
+  />
+</a>
+  <a 
+    href="https://www.linkedin.com/in/andy-chen05/" 
+    
+    className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100"
+  >
+    LinkedIn
+  </a>
+</div>
           
           <button 
             onClick={toggleTheme}
